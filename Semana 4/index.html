@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>EcoVogue</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- CSS personalizado -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">EcoVogue</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contenido">Contenido</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Contenido principal -->
+  <main class="container my-5">
+    
+    <!-- Sección de bienvenida -->
+    <section id="inicio" class="text-center mb-5">
+      <h1>Bienvenidos a EcoVogue</h1>
+      <p><strong>¡Visítanos y sé parte del cambio!</strong> EcoVogue te invita a descubrir moda sostenible, responsable y con estilo.</p>
+    </section>
+
+<!-- Sección de tarjetas -->
+<section class="row text-center mb-5">
+  <div class="col-md-4 mb-3">
+    <div class="card h-100">
+      <img src="https://cdn.prod.website-files.com/65f0ca99d5eae2cef18b2cb8/664e43994c2a14d71d45056d_66356d5ab51366db60ff2565_BOARD-FINAL-768x506-1.jpeg"
+           class="card-img-top img-fluid" alt="Moda Responsable">
+      <div class="card-body">
+        <h3 class="card-title">Moda Responsable</h3>
+        <p class="card-text">Descubre cómo tu ropa puede tener una segunda vida y reducir el impacto ambiental.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4 mb-3">
+    <div class="card h-100">
+      <img src="https://agenciatierraviva.com.ar/wp-content/uploads/2021/05/educacion_ambiental_nin%CC%83os.jpg"
+           class="card-img-top img-fluid" alt="Educación Ambiental">
+      <div class="card-body">
+        <h3 class="card-title">Educación Ambiental</h3>
+        <p class="card-text">Infórmate sobre la importancia del reciclaje textil y su contribución al planeta.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4 mb-3">
+    <div class="card h-100">
+      <img src="https://contenedoresdereciclaje.com/wp-content/uploads/2025/01/Reciclaje-de-Ropa-768x576.webp"
+           class="card-img-top img-fluid" alt="Infografía reciclaje">
+      <div class="card-body">
+        <h3 class="card-title">Infografías</h3>
+        <p class="card-text">Visualiza cómo pequeñas acciones generan grandes cambios ecológicos.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- Sección de video con collapse -->
+    <section id="contenido" class="mb-5">
+      <h2>Contenido Multimedia</h2>
+      <button class="btn btn-primary mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#videoCollapse">
+        Mostrar / Ocultar Video
+      </button>
+      <div class="collapse" id="videoCollapse">
+        <div class="ratio ratio-16x9">
+          <iframe src="https://www.youtube.com/embed/UKVrlSARZFI" 
+                  title="Video sobre reciclaje" 
+                  allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Listas -->
+<!-- Listas -->
+<section class="mb-5">
+  <h2>Listas de Ejemplo</h2>
+  <div class="row">
+    <div class="col-md-6">
+      <h5>Países líderes en reciclaje textil (Ordenados)</h5>
+      <ol>
+        <li>Alemania</li>
+        <li>Suiza</li>
+        <li>Países Bajos</li>
+        <li>Noruega</li>
+        <li>Japón</li>
+      </ol>
+    </div>
+    <div class="col-md-6">
+      <h5>Otros países destacados</h5>
+      <ul>
+        <li>Canadá</li>
+        <li>Suecia</li>
+        <li>Finlandia</li>
+        <li>Francia</li>
+        <li>Corea del Sur</li>
+      </ul>
+    </div>
+  </div>
+</section>
+    <!-- Tabla -->
+    <section class="mb-5">
+      <h2>Tabla de Datos</h2>
+      <table class="table table-striped table-bordered">
+        <thead class="table-dark">
+          <tr>
+            <th>Nombre</th>
+            <th>Edad</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Ana</td><td>25</td></tr>
+          <tr><td>Juan</td><td>30</td></tr>
+          <tr><td>Lucía</td><td>22</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Formulario responsivo -->
+    <section id="contacto" class="mb-5">
+      <h2>Formulario de Contacto</h2>
+      <form class="container">
+        <div class="mb-3">
+          <label for="nombre" class="form-label">Nombre:</label>
+          <input type="text" class="form-control" id="nombre" name="nombre">
+        </div>
+
+        <div class="mb-3">
+          <label for="correo" class="form-label">Correo:</label>
+          <input type="email" class="form-control" id="correo" name="correo">
+        </div>
+
+        <div class="mb-3">
+          <label for="comentarios" class="form-label">Comentarios:</label>
+          <textarea class="form-control" id="comentarios" name="comentarios" rows="3"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+    </section>
+
+    <!-- Enlace externo -->
+    <section class="mb-5">
+      <h2>Enlace Externo</h2>
+      <p>Visita <a href="https://www.mozilla.org" target="_blank">Mozilla</a> para aprender más sobre desarrollo web.</p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-light text-center py-4">
+    <p>&copy; 2025 EcoVogue - Todos los derechos reservados.</p>
+    <a href="#">Términos</a> | <a href="#">Política</a> | <a href="#">Contacto</a>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
